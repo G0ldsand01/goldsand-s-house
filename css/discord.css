@@ -5,7 +5,7 @@
 }
 #home {
     background-image: url(img/bg.jpg);
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -31,6 +31,7 @@ header {
 }
 .logo {
     cursor: pointer;
+    margin-left: 2%;
 }
 
 .nav__links a,
@@ -281,7 +282,25 @@ h1 {
     background-repeat: no-repeat;
     }
 }
+@media only screen and (max-width: 1200px) {
 
+  .nav__links,
+  .cta {
+      display: none;
+  }
+
+  .menu {
+      display: initial;
+  }
+  #home {
+      background-image: url(img/bg.jpg);
+  height: 150vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+}
 @media only screen and (max-width: 800px) {
 
     .nav__links,
